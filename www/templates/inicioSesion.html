@@ -1,0 +1,51 @@
+<ion-view title="InicioSesion" hide-nav-bar="true" id="page2" class=" ">
+    <ion-content padding="false" style="background: url(img/JNxvah5IT36angvi6EHo_fondojw.png) no-repeat center;background-size:cover;" class=" manual-remove-top-padding" scroll="false">
+        <form id="inicioSesion-form17" class="list ">
+            <div class="spacer" style="width: 320px; height: 160px;"></div>
+            <label class="item item-input " id="inicioSesion-input20" name="txtnombre">
+                <input type="text" placeholder="Correo" ng-model="account.user.email">
+            </label>
+            <div class="spacer" style="width: 320px; height: 9px;"></div>
+            <label class="item item-input " id="inicioSesion-input21" name="txtclave">
+                <input type="password" placeholder="Contraseña" ng-model="account.user.password">
+            </label>
+            <div class="spacer" style="width: 320px; height: 9px;"></div>
+            <div>
+                <center>
+                    <p>
+                        <font color="white">¿Olvidaste tu cuenta?</font>
+                    </p>
+                </center>
+            </div>
+            <a id="inicioSesion-button4" style="color:#000000;" class=" button button-energized  button-block " ng-click="account.login()">INICIAR SESIÓN</a>
+            <div>
+                <center>
+                    <p>
+                        <font color="white">¿No tienes cuenta?</font>
+                        <a ui-sref="registro">REGISTRATE AQUÍ</a>
+                    </p>
+                </center>
+            </div>
+
+  <div class="list card" ng-show="user">
+    <div class="item item-avatar profile">
+      <img ng-src="{{ user.profileImg }}">
+      <h2 class="profile-user">Bienvenido, {{ user.displayName }}.</h2>
+    </div>
+  </div>
+
+  <div ng-hide="user">
+    <div>
+      <button ng-click="account.flogin()" class="button button-full bold fb-button">
+        <i class="ion-social-facebook fb-icon"></i> Iniciar con Facebook
+      </button>
+    </div>
+  </div>
+  <div ng-show="user" >
+    <button ui-sref="inicio" class="button button-full button-dark bold">Ir a Inicio</button>
+    <button ng-click="account.logout()" class="button button-full button-stable bold">Salir</button>
+  </div>
+</div>
+        </form>
+    </ion-content>
+</ion-view>

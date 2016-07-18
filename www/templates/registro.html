@@ -1,0 +1,22 @@
+<ion-view title="Registro" hide-nav-bar="true" id="page3" class=" ">
+    <ion-content padding="false" style="background: url(img/ABLwQKwcSCGmVBirKqnk_fondojw2.png) no-repeat center;background-size:cover;" class=" manual-remove-top-padding" scroll="false">
+        <div class="spacer" style="width: 300px; height: 189px;"></div>
+        <form id="registro-form16" class="list ">
+            <label class="item item-input " id="registro-input16" name="txtcorreo">
+                <input type="text" placeholder="Correo Electrónico" ng-model="account.user.email">
+            </label>
+            
+            <div class="spacer" style="width: 300px; height: 4px;"></div>
+            <label class="item item-input " id="registro-input17" name="txtnombre">
+                <input type="text" placeholder="Nombre" ng-model="account.user.displayName">
+            </label>
+            
+            <div class="spacer" style="width: 300px; height: 4px;"></div>
+            <label class="item item-input " id="registro-input18" name="txclave2">
+                <input type="pasword" placeholder="Contraseña" ng-model="account.user.password">>
+            </label>
+        </form>
+        <a id="registro-button3" style="color:#000000;" class=" button button-energized  button-block " ng-click="account.signup()">REGISTARSE</a>
+        
+    </ion-content>
+</ion-view>

@@ -1,0 +1,10 @@
+{
+  "appId": "joywk",
+  "apiKey": "72e822fadf11ce84e2872d6b0643a684aa2175cab10929dde061d5c10fa46f20",
+  "public": "./www",
+  "ignore": [
+    "stamplay.json",
+    "**/.*",
+    "**/node_modules/**"
+  ]
+}

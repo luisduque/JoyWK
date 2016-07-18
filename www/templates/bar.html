@@ -1,0 +1,48 @@
+<ion-view title="Bar" hide-nav-bar="true" id="page8" class=" ">
+    <ion-content padding="false" style="background: url(img/fondobar1.png) no-repeat center;background-size:cover;" class="manual-ios-statusbar-padding" scroll="false">
+        
+
+        <div class ="contenedor_inicio">
+        <div class="contenedor_Imagen">
+                <img class="Imagenrest" src="img/bourbon.png" width="90%" height="auto" style="display: block; margin-left: auto; margin-right: auto;">
+            </div>
+
+            <div class="contenedor_Derecho">
+                <div class="contenedor_texto">
+                <center><h4 class="Titulo">Bourbon ST</h4></center> 
+                <center> <p class="Parrafo">Comida y Cerveza</p></center>
+                </div>      
+            </div>
+            <div class ="contenedor_Abajo">
+        <div id="bar-button-bar5" class=" button-bar ">
+            <a ui-sref="reservaBar" id="bar-button25" style="font-style:italic;color:#FFFFFF;font-size:10px;" class=" button button-light  button-block button-clear icon ion-calendar ">Reservar</a>
+            <a href="tel:3153544428" id="bar-button26" style="font-style:italic;color:#FFFFFF;font-size:10px;" class=" button button-light  button-block button-clear icon ion-ios-telephone ">Domicilios</a>
+            <a ui-sref="menuBar" id="bar-button27" style="color:#FFFFFF;font-size:10px;" class=" button button-positive  button-block button-clear icon ion-fork ">Menu</a>
+        </div>
+     </div>
+     </div>
+
+        <!-- Menu Header -->
+        <div class="bar bar-header" >
+  
+            <div class="h1 title" id="header">JoyWK</div>
+            <button class="button button-icon icon ion-navicon" ui-sref = "inicio"></button>
+        </div>
+        
+        <ion-tabs  class = "tabs-icon-top" id="footertab"> 
+        
+         <ion-tab icon-off="ion-android-restaurant" icon-on="ion-android-restaurant" ui-sref = "restaurantes">
+            <ion-nav-view name="restaurantes"></ion-nav-view>
+        </ion-tab>
+
+        <ion-tab icon-off="ion-wineglass" icon-on="ion-wineglass" ui-sref ="bar">
+            <ion-nav-view name="bar"></ion-nav-view>
+        </ion-tab>
+
+        <ion-tab icon-off="ion-android-star" icon-on="ion-android-star" ui-sref ="eventos">
+            <ion-nav-view name="inicio"></ion-nav-view>
+        </ion-tab>
+        </ion-tabs>
+
+    </ion-content>
+</ion-view>

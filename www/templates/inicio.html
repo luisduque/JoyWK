@@ -1,0 +1,32 @@
+<ion-view title="Inicio" hide-nav-bar="true" id="page4" class=" ">
+    <ion-content padding="false" style="background: url(img/fondoiniciojwk.png) no-repeat center;background-size:cover;" class="manual-ios-statusbar-padding">
+        <div class="spacer" style="width: 320px; height: 35px;"></div>
+        <div class="">
+            <img src="img/5MazVK6GT8OGBzG1I3Gf_minifondo.png" width="90%" height="auto" style="display: block; margin-left: auto; margin-right: auto;">
+        </div>
+
+        <!-- Menu Header -->
+        <div class="bar bar-header" >
+  
+            <div class="h1 title" id="header">JoyWK</div>
+            <button class="button button-icon icon ion-navicon" ui-sref = "inicio"></button>
+        </div>
+        
+        <ion-tabs  class = "tabs-icon-top" id="footertab"> 
+        
+         <ion-tab icon-off="ion-android-restaurant" icon-on="ion-android-restaurant" ui-sref = "restaurantes">
+            <ion-nav-view name="restaurantes"></ion-nav-view>
+        </ion-tab>
+
+        <ion-tab icon-off="ion-wineglass" icon-on="ion-wineglass" ui-sref ="bar">
+            <ion-nav-view name="bar"></ion-nav-view>
+        </ion-tab>
+
+        <ion-tab icon-off="ion-android-star" icon-on="ion-android-star" ui-sref ="eventos">
+            <ion-nav-view name="inicio"></ion-nav-view>
+        </ion-tab>
+        </ion-tabs>
+
+
+    </ion-content>
+</ion-view>

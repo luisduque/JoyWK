@@ -1,0 +1,49 @@
+<ion-view title="ReservaBar" hide-nav-bar="true" id="page10" class=" ">
+    <ion-content padding="false" style="background: url(img/fondobar2.png) no-repeat center;background-size:cover;" class=" manual-remove-top-padding" scroll="false">
+        
+        <h5 id="reservaBar-heading2" style="color:#FFFFFF;text-align:center;" class=" ">BOURBON ST</h5>
+        <div class="">
+            <img src="img/R7CoXUg5Qy6al8Vje11e_bourbon.png" width="50%" height="auto" style="display: block; margin-left: auto; margin-right: auto;">
+        </div>
+        <div class="spacer" style="width: 320px; height: 9px;"></div>
+        <p id="reservaBar-markdown3" style="color:#FFFFFF;text-align:center;" class=" ">Alimentos que despiertan sensaciones</p>
+        <p id="reservaBar-markdown4" style="margin-top:0px;color:#FFFFFF;text-align:center;" class=" ">Tipo de Reserva</p>
+        <form id="reservaBar-form22" class="list ">
+            <ion-checkbox name="checkcumple">Cumpleaños</ion-checkbox>
+            <ion-checkbox name="checkAni">Aniversario</ion-checkbox>
+            <label class="item item-input " id="reservaBar-input25" name="txtOtro">
+                <input type="text" placeholder="Otro">
+            </label>
+            <label class="item item-input " id="reservaBar-input26" name="txtfecha">
+                <input type="text" placeholder="Fecha">
+            </label>
+            <label class="item item-input " id="reservaBar-input27" name="txtperson">
+                <input type="text" placeholder="Número de Personas">
+            </label>
+            <a href="" id="reservaBar-button39" style="color:#000000;" class=" button button-energized  button-block ">RESERVAR</a>
+        </form>
+
+         <!-- Menu Header -->
+        <div class="bar bar-header" >
+  
+            <div class="h1 title" id="header">JoyWK</div>
+            <button class="button button-icon icon ion-navicon" ui-sref = "inicio"></button>
+        </div>
+        
+        <ion-tabs  class = "tabs-icon-top" id="footertab"> 
+        
+         <ion-tab icon-off="ion-android-restaurant" icon-on="ion-android-restaurant" ui-sref = "restaurantes">
+            <ion-nav-view name="restaurantes"></ion-nav-view>
+        </ion-tab>
+
+        <ion-tab icon-off="ion-wineglass" icon-on="ion-wineglass" ui-sref ="bar">
+            <ion-nav-view name="bar"></ion-nav-view>
+        </ion-tab>
+
+        <ion-tab icon-off="ion-android-star" icon-on="ion-android-star" ui-sref ="eventos">
+            <ion-nav-view name="inicio"></ion-nav-view>
+        </ion-tab>
+        </ion-tabs>
+        
+    </ion-content>
+</ion-view>
